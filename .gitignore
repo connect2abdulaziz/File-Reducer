@@ -1,0 +1,79 @@
+# =========================
+# WordPress .gitignore
+# =========================
+
+# --------------------------
+# Sensitive / Config Files
+# --------------------------
+wp-config.php
+.htaccess
+
+# --------------------------
+# WordPress Core (Optional - uncomment if you don't want to track core)
+# --------------------------
+# /wp-admin/
+# /wp-includes/
+# /wp-*.php
+# /index.php
+# /license.txt
+# /readme.html
+# /xmlrpc.php
+
+# --------------------------
+# Uploads & Media
+# --------------------------
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+wp-content/backups/
+
+# --------------------------
+# Debug & Logs
+# --------------------------
+wp-content/debug.log
+*.log
+error_log
+
+# --------------------------
+# Plugin Storage (uploaded/processed files)
+# --------------------------
+wp-content/plugins/*/storage/input/*
+wp-content/plugins/*/storage/output/*
+!wp-content/plugins/*/storage/input/.gitkeep
+!wp-content/plugins/*/storage/output/.gitkeep
+!wp-content/plugins/*/storage/index.php
+
+# --------------------------
+# Package Managers
+# --------------------------
+/vendor/
+node_modules/
+composer.lock
+
+# --------------------------
+# IDE & OS Files
+# --------------------------
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# --------------------------
+# Environment Files
+# --------------------------
+.env
+.env.*
+*.local
+
+# --------------------------
+# Build & Cache
+# --------------------------
+/build/
+/dist/
+*.cache
+.sass-cache/
